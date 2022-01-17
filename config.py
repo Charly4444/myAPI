@@ -11,6 +11,6 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int
 
     class Config:
-        env_file = ".env.py"  # specifies a '.env' file for the values here to be fetched from
+        env_file = ".env.py"  # specifies a '.env' file for the values here to be fetched from during testing in DEV
 
 settings = Settings()
