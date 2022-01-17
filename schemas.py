@@ -32,16 +32,6 @@ class PostCreate(PostBase):  # has also inherited the owner_id field I added now
     pass
 
 
-# class PostOut(BaseModel):
-#     id: int
-#     title: str
-#     content: str
-#     created_at: datetime
-#     owner_id: int
-#     owner: UserOut
-#     class Config:
-#         orm_mode = True
-
 class PostOut(BaseModel):
     id: int
     title: str
