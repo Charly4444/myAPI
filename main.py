@@ -6,7 +6,7 @@ from routers import post, user, auth, vote
 
 from fastapi.middleware.cors import CORSMiddleware
 # models.Base.metadata.drop_all(bind=engine)
-models.Base.metadata.create_all(bind=engine)    # This creates all our models
+models.Base.metadata.create_all(bind=engine)    # This creates all our models while we're still testing in DEV
 
 app = FastAPI()
 
