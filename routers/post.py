@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
 from typing import Optional, List
 import schemas
-import models  # I'm importing all models for the tables I've created for use Here
+import models  # importing all models for tables created
 from database import get_db
 from sqlalchemy.orm import session
 from routers import oauth2
